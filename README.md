@@ -7,17 +7,29 @@ to use it include following repository in your pom.xml
 
 ```
 <repositories>
-  <repository>
-    <id>bintray</id>
-    <url>http://dl.bintray.com/milenkovicm/checkstyle-rules</url>
-    <releases>
-      <enabled>true</enabled>
-    </releases>
-    <snapshots>
-      <enabled>false</enabled>
-    </snapshots>
-  </repository>
+	<repository>
+		<id>bintray-milenkovicm</id>
+		<url>http://dl.bintray.com/milenkovicm/maven/</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</repository>
 </repositories>
+<pluginRepositories>
+	<pluginRepository>
+		<id>bintray-milenkovicm</id>
+		<url>http://dl.bintray.com/milenkovicm/maven/</url>
+		<releases>
+			<enabled>true</enabled>
+		</releases>
+		<snapshots>
+			<enabled>false</enabled>
+		</snapshots>
+	</pluginRepository>
+</pluginRepositories>
 ```
 ```
 <plugin>
