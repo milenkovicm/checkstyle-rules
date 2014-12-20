@@ -4,7 +4,6 @@ checkstyle-rules
 Set of checkstyle rules i usually use in my projects.
 
 to use it include following repository in your pom.xml
-
 ```
 <repositories>
 	<repository>
@@ -31,15 +30,16 @@ to use it include following repository in your pom.xml
 	</pluginRepository>
 </pluginRepositories>
 ```
+and then add `maven checkstyle pluging` to enable checkstyle checking.
 ```
 <plugin>
 	<artifactId>maven-checkstyle-plugin</artifactId>
-	<version>2.10</version>
+	<version>2.13</version>
 	<dependencies>
 		<dependency>
 			<groupId>com.github.milenkovicm</groupId>
 			<artifactId>checkstyle-rules</artifactId>
-			<version>1.0.0-SNAPSHOT</version>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 
@@ -62,3 +62,4 @@ to use it include following repository in your pom.xml
 	</executions>
 </plugin>
 ```
+`default/checkstyle.xml` file will be used. 
